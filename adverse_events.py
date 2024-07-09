@@ -9,8 +9,8 @@ st.set_page_config(page_title='Adverse_Effects',page_icon = "bar_chart",layout =
 st.title(":bar_chart: Adverse Events EDA")
 st.markdown('<style>dic.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
-os.chdir(r'C:\Users\chira\OneDrive\Documents\decode\python')
-df = pd.read_excel(r"C:\Users\chira\OneDrive\Documents\decode\python\Adverse_Events.xlsx")
+#os.chdir(r'C:\Users\chira\OneDrive\Documents\decode\python')
+df = pd.read_excel("Adverse_Events.xlsx")
 
 col1,col2 = st.columns((2))
 # df['ASTDT'] = pd.to_datetime(df["ASTDT"])
