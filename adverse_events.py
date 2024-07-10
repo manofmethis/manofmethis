@@ -97,7 +97,7 @@ with col2:
     st.plotly_chart(fig,use_container_width=True,height = 200,theme='streamlit')
 
 with col1:
-    st.subheader("Treatment wise Adverse event")
+    st.subheader("Subject wise Adverse event")
     fig = px.bar(filter_df.dropna(),x = "USUBJID",y = "AETERM",text = [i for i in filter_df.dropna()['ADURN']])
     st.plotly_chart(fig,use_container_width=True,height = 200,theme="streamlit")
 
